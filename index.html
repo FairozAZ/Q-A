@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@200;300;400;500" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Question and Answer</title>
+</head>
+<body>
+    <div class="love"><img src="./love.png" alt="love" onclick="contentOpen()"></div>
+    
+    <!-- main container -->
+    <div class="main">
+        
+        <div class="headline">
+            <span></span>
+            <h1>প্রেম বিষয়ক প্রশ্নোত্তর</h1>
+            <span></span>
+        </div>
+
+        <div class="question">
+            <h3>আমি কি কারো প্রেমে পড়েছি ?</h3>
+            <div class="option-container">
+                <h4>এক বা একাধিক আইটেম সেলেক্ট করুন</h4>
+                <div class="option">
+                    <input type="checkbox" class="positive"> বেশিরভাগ সময় অন্যমনস্ক থাকি 
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="negative"> কথায় কথায় রাগ উঠে  
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="positive"> সহজেই ভুলে যাই  
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="negative"> কথা বলতে ভাল্লাগেনা  
+                </div>
+            </div>
+            <button onclick="showResult()">সাবমিট করুন</button>
+        </div>
+
+        <div class="answer">
+            <p id="positiveResult">অভিনন্দন! আপনি প্রেমের সাগরে হাবুডুবু খাচ্ছেন।</p>
+            <p id="negativeResult">আপনার জীবনে প্রেমই নাই, হাহহা।</p>
+            <p id="defaultResult">সঠিক বলা যাচ্ছে না, আপনি হলেন ভেজালমার্কা।</p>
+        </div>
+
+        <div class="back">পেছনে যান</div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
